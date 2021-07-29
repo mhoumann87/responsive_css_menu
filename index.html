@@ -8,17 +8,99 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Logo Here</h1>
-      <nav>
-        <ul>
-          <li><a href="#">link 1</a></li>
-          <li><a href="#">link 2</a></li>
-          <li><a href="#">link 3</a></li>
-          <li><a href="#">link 4</a></li>
-          <li><a href="#">link 5</a></li>
+    <header class="header" role="banner">
+      <nav id="nav" class="nav" role="navigation">
+        <!--! Navigation menu -->
+        <!-- TODO insert hidden in ul -->
+        <ul
+          class="nav__menu"
+          id="menu"
+          tabindex="-1"
+          aria-label="main navigation"
+        >
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Shop</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
         </ul>
+
+        <!--! Menu Toggle Button -->
+        <a
+          href="#nav"
+          class="nav__toggle"
+          role="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+          >
+            <title>Toggle Menu</title>
+
+            <g>
+              <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5" />
+
+              <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5" />
+
+              <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5" />
+
+              <circle class="menuicon__circle" r="23" cx="37" cy="25" />
+            </g>
+          </svg>
+        </a>
+
+        <!--! Animated Background Effect  -->
+        <div class="splash"></div>
       </nav>
     </header>
+
+    <!--! Demo Content  -->
+    <main class="main" role="main">
+      <div class="gallery" aria-label="gallery">
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a>
+        <a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a
+        ><a href="#" class="gallery__item"></a>
+      </div>
+    </main>
   </body>
 </html>
