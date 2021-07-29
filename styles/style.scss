@@ -1,0 +1,67 @@
+:root {
+  --screen-width: 320px;
+  --screen-height: 500px;
+  --header-bg-color: #673ab7;
+  --splash-bg-color: #368887;
+}
+
+// calculate a circle's circumference based on radius
+@function circumference($r) {
+  $pi: 3.141592653;
+  @return 2 * $pi * $r;
+}
+
+//=================================
+// Mani Navigation Menu
+//=================================
+
+.nav {
+  // Toggle Button
+  &__toggle {
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.15s linear;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: var(--screen-height);
+    position: relative;
+    z-index: 5;
+    visibility: hidden;
+  }
+
+  &__item {
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0, 0.995, 0.99, 1) 0.3s;
+  }
+
+  @for $i from 1 through 5 {
+    &__item:nth-child(#{$i}) {
+      transform: translate(-40px * $i);
+    }
+  }
+
+  &__link {
+    color: white;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
