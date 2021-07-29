@@ -1,0 +1,11 @@
+{
+  "name": "mobile_menu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mhoumann87/responsive_css_menu.git",
+  "author": "Michael Houmann <mhoumann87@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}
