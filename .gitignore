@@ -120,3 +120,6 @@ dist
 # CSS files
 styles/*.css
 styles/*.css.map
+
+# vscode config files
+.vscode/
